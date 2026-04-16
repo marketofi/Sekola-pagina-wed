@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekola | Herramientas Digitales Gratis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: #0a0a0a;
+            border: 1px solid #1a1a1a;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: #3b82f6;
+            background: #0f0f0f;
+        }
+
+        .btn-youtube {
+            background-color: #ff0000;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-youtube:hover {
+            transform: scale(1.05);
+            background-color: #cc0000;
+        }
+
+        /* Scrollbar personalizada */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación Fija -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-2xl font-800 tracking-tighter flex items-center gap-2">
+                <span class="text-blue-500 font-black">SEKOLA</span>
+            </div>
+            <a href="https://youtube.com/@sekolaoficial?si=d2mtOp-JulXjqXiC" target="_blank" 
+               class="btn-youtube text-white px-6 py-2.5 rounded-full font-bold text-sm flex items-center gap-2">
+                <i class="fab fa-youtube text-lg"></i> VER CANAL
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-40 pb-20 px-6 text-center max-w-5xl mx-auto">
+        <h1 class="text-5xl md:text-8xl font-800 tracking-tight mb-8">
+            Software <span class="text-blue-500">Gratis</span> Para Tu Día a Día.
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+            Buscamos los mejores productos digitales con alta demanda, los probamos por ti y te enseñamos a usarlos paso a paso. Totalmente gratis.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#productos" class="w-full sm:w-auto bg-white text-black px-10 py-4 rounded-full font-bold hover:bg-gray-200 transition">
+                Explorar Productos
+            </a>
+            <a href="https://youtube.com/@sekolaoficial?si=d2mtOp-JulXjqXiC" target="_blank" class="w-full sm:w-auto border border-white/20 px-10 py-4 rounded-full font-bold hover:bg-white/5 transition">
+                Ir a YouTube
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección de Información -->
+    <section id="productos" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl md:text-5xl font-800 mb-4">¿Qué hace Sekola?</h2>
+            <p class="text-gray-500">Transformamos herramientas complejas en soluciones simples.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-card p-10 rounded-3xl">
+                <div class="w-12 h-12 bg-blue-500/10 text-blue-500 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-search text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Búsqueda</h3>
+                <p class="text-gray-400 leading-relaxed">Rastreamos internet buscando software que la gente necesita pero que suele ser de pago.</p>
+            </div>
+
+            <div class="glass-card p-10 rounded-3xl">
+                <div class="w-12 h-12 bg-green-500/10 text-green-500 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-play text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Enseñanza</h3>
+                <p class="text-gray-400 leading-relaxed">Creamos tutoriales directos al grano. Te decimos para qué sirve y cómo usarlo hoy mismo.</p>
+            </div>
+
+            <div class="glass-card p-10 rounded-3xl">
+                <div class="w-12 h-12 bg-purple-500/10 text-purple-500 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-gift text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Acceso Libre</h3>
+                <p class="text-gray-400 leading-relaxed">Sin suscripciones ocultas. Solo productos digitales que puedes empezar a usar gratis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-32 px-6">
+        <div class="max-w-4xl mx-auto bg-blue-600 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-6xl font-800 mb-8 text-white">¿Quieres ver los productos en acción?</h2>
+                <p class="text-blue-100 text-lg mb-12 max-w-xl mx-auto">
+                    Suscríbete a mi canal para estar al tanto de las últimas herramientas digitales que están rompiendo el mercado.
+                </p>
+                <a href="https://youtube.com/@sekolaoficial?si=d2mtOp-JulXjqXiC" target="_blank" 
+                   class="inline-flex items-center gap-4 bg-black text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-gray-900 transition shadow-2xl">
+                    <i class="fab fa-youtube text-red-500 text-2xl"></i>
+                    SUSCRÍBETE AHORA
+                </a>
+            </div>
+            <!-- Decoración de fondo -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-black/20 rounded-full blur-3xl"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10 text-center">
+        <p class="text-gray-600 font-medium">© 2024 SEKOLA — Mejores Productos Digitales Gratuitos.</p>
+    </footer>
+
+</body>
+</html>
